@@ -1,0 +1,123 @@
+1. WAP to demonstrate all four categories of functions for volume of the cylinder  (volume of cylinder: 3.14*r*r*h) 
+ a) Function without parameters without return value. 
+ b) Function with parameter without return value. 
+ c) Function without parameter with return value. 
+ d) Function with parameters with return value. 
+
+
+
+a) #include<stdio.h>
+void func()
+{
+    float c;
+    float r;
+    float h;
+    printf("enter value for r:");
+    scanf("%f",&r);
+    
+    printf("enter value for h:");
+    scanf("%f",&h);
+    
+    c =  3.14*r*r*h;
+    
+    printf("\n volume of cylinder is:%f",c);
+    
+}
+
+int main()
+{
+    
+    func();
+}
+
+
+b) #include<stdio.h>
+void func(float r,float h)
+{
+    float c;
+    
+    c =  3.14*r*r*h;
+    
+    printf("\n volume of cylinder is:%f",c);
+    
+}
+
+int main()
+{
+    
+    float r;
+    float h;
+    printf("enter value for r:");
+    scanf("%f",&r);
+    
+    printf("enter value for h:");
+    scanf("%f",&h);
+    
+    func(r,h);
+}
+
+O/P - enter value for r:2
+3enter value for h:
+3
+volume of cylinder is:37.680000
+
+
+c) 
+#include<stdio.h>
+int func()
+{
+    double r;
+    double h;
+    double c ;
+    
+    printf("enter r value and h value:");
+    scanf("%lf%lf",&r,&h);
+    
+    c = 3.14*r*r*h;
+    
+    return (c);
+}
+
+int main()
+{
+    double vol;
+    vol = func();
+    printf("volume of cylinder:%lf",vol);
+}
+
+
+O/P - enter r value and h value:2
+3
+volume of cylinder:37.000000
+
+
+
+d) #include<stdio.h>
+int func(double r,double h)
+{
+    double c;
+   
+    
+    c = 3.14*r*r*h;
+    
+    return (c);
+}
+
+int main()
+{
+    double r;
+    double h;
+    
+    printf("enter r value and h value:");
+    scanf("%lf%lf",&r,&h);
+    
+    double vol;
+    vol = func(r,h);
+    printf("volume of cylinder:%lf",vol);
+}
+
+
+O/P - enter r value and h value:2
+3
+volume of cylinder:37.000000
+

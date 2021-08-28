@@ -1,0 +1,35 @@
+WAP to print Fibonacci series. 
+
+
+#include<stdio.h>
+void fibo(range)
+{
+    int a=0 ,b=1,c;
+    
+    while(a<=range)
+    {
+        printf("%d ",a);
+        c = a+b;
+        a = b;
+        b = c;
+    }
+    
+    
+}
+
+int main()
+{
+    int range;
+    printf("Enter the range:");
+    scanf("%d",&range);
+    
+    printf("\n the Fibonacci series is:");
+    
+    fibo(range);
+    
+}
+
+
+O/P -
+Enter the range:10
+the Fibonacci series is:0 1 1 2 3 5 8 

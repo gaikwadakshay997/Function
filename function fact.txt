@@ -1,0 +1,28 @@
+ WAP to calculate factorial of a number using a function.(use recursive)
+
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter any number:");
+    scanf("%d",&n);
+    
+    fact(n);
+    return 0;
+}
+
+int fact(n)
+{
+    int i,f=1;
+    for(i=1;i<=n;i++)
+    {
+        f = f*i;
+
+    }
+    printf("\n factorial of %d is: %d",n,f);
+}
+O/P - enter any number:5
+
+      factorial of 5 is: 120
